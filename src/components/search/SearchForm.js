@@ -9,11 +9,11 @@ const SearchForm = (callback, deps) => {
 
     const [page, setPage] = useState(0);
     const [formData, setFormData] = useState({
-        height: 0,
-        weight: 0,
-        size: 0,
-        skill: "",
-        ride: ""
+        height: null,
+        weight: null,
+        size: null,
+        skill: null,
+        ride: null
     })
 
     const PageDisplay = () => {
@@ -45,10 +45,10 @@ const SearchForm = (callback, deps) => {
                     </form>
                 </div>
                 <div className="footer">
-                    <button type="button" className="btn btn-dark" onClick={() => setPage(page - 1)}
+                    <button type="button" className="btn btn-outline-light" onClick={() => setPage(page - 1)}
                             disabled={page === 0}>Prev
                     </button>
-                    <button type="button" className="btn btn-dark" onClick={() =>
+                    <button type="button" className="btn btn-outline-light" onClick={() =>
                         page === FormTitles.length - 1 ?
                             submit(formData) :
                             setPage(page + 1)
