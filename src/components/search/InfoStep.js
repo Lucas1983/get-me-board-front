@@ -6,13 +6,13 @@ const InfoStep = ({formData, setFormData}) => {
         <>
             <label htmlFor="sex" className="control-label lh-base text-decoration-underline">Sex</label>
             <div>
-                <div className="form-check form-check-inline">
+                <div className="form-check row form-check-inline">
                     <label htmlFor="sex_male" className="form-check-label text-decoration-underline">Male</label>
                     <input id="sex_male" type="radio" className="form-check-input " value="MALE"
                            checked={formData.sex === 'MALE'}
                            onChange={event => setFormData({...formData, sex: event.target.value})}/>
                 </div>
-                <div className="form-check form-check-inline">
+                <div className="form-check row form-check-inline">
                     <label htmlFor="sex_female" className="form-check-label text-decoration-underline">Female</label>
                     <input id="sex_female" type="radio" className="form-check-input" value="FEMALE"
                            checked={formData.sex === 'FEMALE'}
