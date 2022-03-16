@@ -6,10 +6,10 @@ const Layout = () => {
     return (
         <div className="container-fluid d-flex flex-column vh-100">
             <div className="menu row h-25">
-                <nav className="navbar navbar-expand fs-2">
+                <nav className="navbar navbar-expand fs-2 fw-bolder">
                     <div className="container-fluid">
-                        <di className="navbar-brand ">
-                            <img src={logo} alt="Get Me Board" className="w-50 h-50"/>
+                        <di className="navbar-brand">
+                            <img src={logo} alt="Get Me Board" className="w-50 h-50 mt-5 ms-5"/>
                         </di>
                         <div className="navbar-nav w-50 justify-content-evenly">
                             <div className="nav-item">
